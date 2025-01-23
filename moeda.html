@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="moeda.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Moedas</h1>
+    <p style="color: rgb(129, 0, 0); font-weight: bold;"><strong> Algumas funcionalidades desse site dependem de APIs externas que estão fora do ar ou não foram ativadas pelo site que forneceu. O código foi feito e revisado corretamente, mas as requisições às APIs podem não funcionar no momento.</strong></p>
+    <label for="amount">Valor:</label>
+    <input type="number" id="amount" placeholder="Digite o valor" />
+
+    <label for="fromCurrency">Moeda de Origem:</label>
+    <select id="fromCurrency">
+      <option value="USD">USD - Dólar</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="BRL">BRL - Real</option>
+    </select>
+
+    <label for="toCurrency">Moeda de Destino:</label>
+    <select id="toCurrency">
+      <option value="USD">USD - Dólar</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="BRL">BRL - Real</option>
+    </select>
+
+    <button id="convertButton">Converter</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="moeda.js"></script>
+</body>
+</html>

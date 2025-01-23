@@ -1,0 +1,113 @@
+/* Fundo lilás com nuvens */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9881eb; /* Fundo lilás */
+    margin: 0;
+    padding: 20px;
+    position: relative; /* Necessário para posicionar as nuvens */
+    overflow: hidden; /* Para evitar que as nuvens saiam da tela */
+  }
+  
+  /* Estilo das nuvens */
+  .cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8); /* Nuvem branca com transparência */
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 1;
+    animation: moveClouds 30s linear infinite;
+  }
+  
+  .cloud:nth-child(1) {
+    width: 300px;
+    height: 200px;
+    top: 20%;
+    left: -400px;
+    animation-duration: 40s;
+  }
+  
+  .cloud:nth-child(2) {
+    width: 250px;
+    height: 180px;
+    top: 10%;
+    left: -500px;
+    animation-duration: 45s;
+  }
+  
+  .cloud:nth-child(3) {
+    width: 200px;
+    height: 150px;
+    top: 50%;
+    left: -600px;
+    animation-duration: 50s;
+  }
+  
+  /* Animação das nuvens */
+  @keyframes moveClouds {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100vw); /* Move as nuvens para fora da tela */
+    }
+  }
+  
+  /* Estilo do container */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ded8e4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(65, 32, 92, 0.1);
+    z-index: 2; /* Garante que o conteúdo ficará acima das nuvens */
+    position: relative;
+  }
+  
+  /* Estilo dos títulos */
+  h1, h2 {
+    text-align: center;
+  }
+  
+  /* Estilo do label */
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  /* Estilo dos inputs e botões */
+  input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cd98ff;
+    border-radius: 5px;
+  }
+  
+  /* Estilo do botão */
+  button {
+    background-color: #4d29a0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #331586;
+  }
+  
+  /* Estilo dos resultados */
+  .results ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .results li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .results li:last-child {
+    border-bottom: none;
+  }
+  

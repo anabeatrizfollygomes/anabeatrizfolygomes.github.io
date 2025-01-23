@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previsão do Tempo</title>
+  <p style="color: rgb(129, 0, 0); font-weight: bold;"><strong> Algumas funcionalidades desse site dependem de APIs externas que estão fora do ar ou não foram ativadas pelo site que forneceu. O código foi feito e revisado corretamente, mas as requisições às APIs podem não funcionar no momento.</strong></p>
+  <link rel="stylesheet" href="clima.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Previsão do Tempo</h1>
+    <label for="cityName">Digite o nome da cidade:</label>
+    <input type="text" id="cityName" placeholder="Ex.: São Paulo" />
+    <button id="searchButton">Buscar Clima</button>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div id="results" class="results">
+      <h2>Informações Climáticas:</h2>
+      <ul id="weatherList"></ul>
+    </div>
+  </div>
+  <script src="clima.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Biblioteca</title>
+  <link rel="stylesheet" href="biblioteca.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Biblioteca</h1>
+    <div class="form">
+      <label for="title">Título:</label>
+      <input type="text" id="title" placeholder="Digite o título do livro">
+      
+      <label for="author">Autor:</label>
+      <input type="text" id="author" placeholder="Digite o autor do livro">
+      
+      <label for="isAvailable">Disponível:</label>
+      <select id="isAvailable">
+        <option value="true">Sim</option>
+        <option value="false">Não</option>
+      </select>
+      
+      <button onclick="addBook()">Adicionar Livro</button>
+    </div>
+
+    <div class="actions">
+      <button onclick="listAvailableBooks()">Listar Livros Disponíveis</button>
+      <button onclick="listBorrowedBooks()">Listar Livros Emprestados</button>
+      <button onclick="calculateTotalLoans()">Calcular Total de Empréstimos</button>
+    </div>
+
+    <h2>Livros</h2>
+    <div id="bookList">
+      <ul id="availableBooks"></ul>
+      <ul id="borrowedBooks"></ul>
+    </div>
+  </div>
+
+  <script src="biblioteca.js"></script>
+</body>
+</html>

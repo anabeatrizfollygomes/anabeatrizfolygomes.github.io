@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtrar e Mapear Dados de Filmes</title>
+  <p style="color: rgb(129, 0, 0); font-weight: bold;"><strong> Algumas funcionalidades desse site dependem de APIs externas que estão fora do ar ou não foram ativadas pelo site que forneceu. O código foi feito e revisado corretamente, mas as requisições às APIs podem não funcionar no momento.</strong></p>  <link rel="stylesheet" href="filmes.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Filmes por Título</h1>
+    <label for="movieTitle">Digite o título do filme:</label>
+    <input type="text" id="movieTitle" placeholder="Ex.: Batman" />
+    <button id="searchButton">Buscar Filmes</button>
+
+    <div id="results" class="results">
+      <h2>Resultados:</h2>
+      <ul id="movieList"></ul>
+    </div>
+  </div>
+  <script src="filmes.js"></script>
+</body>
+</html>
